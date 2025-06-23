@@ -1,0 +1,7 @@
+@layer utilities{
+    @media(max-width:768px){
+        .hide-after-3 > .item:nth-child(n+4){
+            @apply hidden
+        }
+    }
+}
