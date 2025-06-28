@@ -32,14 +32,14 @@ function Consultation() {
     }, []);
 
     return (
-        <section className="mt-20">
+        <section className="md:pt-20 md:pb-20 pt-[60px] pb-[100px]">
             <div className="max-w-7xl mx-auto px-10 flex justify-between md:gap-3 gap-6 md:flex-row flex-col">
-                <div className="max-w-[535px] w-full md:sticky static md:top-[120px] top-0 md:h-screen h-auto">
-                    <button className="bg-[#F2F2F7] py-2 px-4 flex items-center justify-between rounded-lg text-base cursor-pointer mb-4">
+                <div className="md:max-w-[535px] max-w-full w-full  ">
+                    <button className="bg-[#F2F2F7] py-2 px-4 flex items-center justify-between rounded-lg text-base cursor-pointer">
                         <img className="mr-2 w-4 h-4" src={call} alt="" />
                         Biz bilan bog’laning
                     </button>
-                    <h2 className="font-semibold md:text-3xl text-xl">
+                    <h2 className="font-semibold md:text-3xl text-xl md:mt-4 mt-3">
                         Konsultatsiyaga yoziling va biznesingizni
                         tizimlashtiring
                     </h2>
@@ -47,7 +47,7 @@ function Consultation() {
 
                 <form
                     ref={formRef}
-                    className="max-w-[568px] w-full bg-gradient-to-br from-[#FEFEFE] via-[#FAFAFA] to-[#F9F9F9] border border-[#E2E8F0] p-6 rounded-3xl"
+                    className="md:max-w-[568px] max-w-full w-full bg-gradient-to-br from-[#FEFEFE] via-[#FAFAFA] to-[#F9F9F9] border border-[#E2E8F0] p-6 rounded-3xl"
                     name="submit-to-google-sheet"
                 >
                     <label className="block mb-2" htmlFor="ism">
