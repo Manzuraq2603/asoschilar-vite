@@ -15,13 +15,13 @@ function Testimonial() {
                             Fikrlar
                         </p>
                     </button>
-                    <h2 className="max-w-[525px] w-full h-[108px] font-semibold lg:text-3xl md:text-2xl text-xl lg:leading-9 md:leading-8 leading-7 md:tracking-[-0.75%] tracking-[-0.5%]">
+                    <h2 className="max-w-[525px] w-full  font-semibold lg:text-3xl md:text-2xl text-xl lg:leading-9 md:leading-8 leading-7 md:tracking-[-0.75%] tracking-[-0.5%]">
                         Mijozlardan samimiy fikrlar
                     </h2>
                 </div>
 
                 <div>
-                    <ul className="max-w-[588px] ] w-full grid gap-8 ">
+                    <ul className="max-w-[588px] ] w-full grid ">
                         <li className="flex justify-between items-start lg:gap-6 md:gap-4 gap-3 border-b-2 border-[#F2F2F7] lg:py-10 md:py-8 py-6">
                             <div className="lg:w-20 lg:h-20 md:w-16 md:h-16 w-14 h-14 rounded-xl ">
                                 <img src={customerImg1} alt="customer1" />
