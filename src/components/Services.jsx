@@ -30,26 +30,26 @@ function Services() {
                         </div>
 
                         <div className="max-w-[520px] w-full grid gap-2">
-                            <h3 className="font-semibold lg:text-2xl md:text-xl text-lg md:leading-8 leading-7 tracking-[-0.6%] ">
+                            <h3 className="font-semibold lg:text-2xl md:text-xl text-base md:leading-8 leading-7 tracking-[-0.6%] ">
                                 Umumiy boshqaruvni tizimlashtirish
                             </h3>
-                            <ul className="mt-2 font-normal md:text-base text-sm leading-7 text-[#334155] r">
-                                <li className="flex items-center text-nowrap gap-[5px]">
+                            <ul className="mt-2 font-normal md:text-base text-sm  text-[#334155] ">
+                                <li className="flex items-start  gap-[5px]">
                                     {" "}
                                     <span className="inline-block w-1 h-1 bg-[#334155] rounded-[50%]"></span>
-                                    Tashkiliy struktura (Org. struktura)
+                                    <p>Tashkiliy struktura (Org. struktura)</p>
                                 </li>
-                                <li className="flex items-center text-nowrap gap-[5px]">
+                                <li className="flex items-start  gap-[5px]">
                                     {" "}
                                     <span className="inline-block w-1 h-1 bg-[#334155] rounded-[50%]"></span>{" "}
                                     Ichki reglamentlar va tartiblar
                                 </li>
-                                <li className="flex items-center text-nowrap gap-[5px]">
+                                <li className="flex items-start  gap-[5px]">
                                     {" "}
                                     <span className="inline-block w-1 h-1 bg-[#334155] rounded-[50%]"></span>{" "}
                                     Ish standartlar
                                 </li>
-                                <li className="flex items-center text-nowrap gap-[5px]">
+                                <li className="flex items-start  gap-[5px]">
                                     {" "}
                                     <span className="inline-block w-1 h-1 bg-[#334155] rounded-[50%]"></span>{" "}
                                     Hisobot tizimi
@@ -68,17 +68,17 @@ function Services() {
                                 Sotuv bo'limi
                             </h3>
                             <ul className="mt-2 font-normal md:text-base text-sm leading-7 text-[#334155] r">
-                                <li className="flex items-center text-nowrap gap-[5px]">
+                                <li className="flex items-start  gap-[5px]">
                                     {" "}
                                     <span className="inline-block w-1 h-1 bg-[#334155] rounded-[50%]"></span>
                                     CRM tizimini biznesingizga moslashtirish
                                 </li>
-                                <li className="flex items-center text-nowrap gap-[5px]">
+                                <li className="flex items-start  gap-[5px]">
                                     {" "}
                                     <span className="inline-block w-1 h-1 bg-[#334155] rounded-[50%]"></span>{" "}
                                     Sotuv voronkasini ishlab chiqish
                                 </li>
-                                <li className="flex items-center text-nowrap gap-[5px]">
+                                <li className="flex items-start  gap-[5px]">
                                     {" "}
                                     <span className="inline-block w-1 h-1 bg-[#334155] rounded-[50%]"></span>{" "}
                                     Skriptlar va sotuv algoritmlari yaratish
@@ -97,23 +97,23 @@ function Services() {
                                 HR bo’limi
                             </h3>
                             <ul className="mt-2 font-normal md:text-base text-sm leading-7 text-[#334155] r">
-                                <li className="flex items-center text-nowrap gap-[5px]">
+                                <li className="flex items-start  gap-[5px]">
                                     {" "}
                                     <span className="inline-block w-1 h-1 bg-[#334155] rounded-[50%]"></span>
                                     Xodimlar uchun aniq reglamentlar
                                 </li>
-                                <li className="flex items-center text-nowrap gap-[5px]">
+                                <li className="flex items-start  gap-[5px]">
                                     {" "}
                                     <span className="inline-block w-1 h-1 bg-[#334155] rounded-[50%]"></span>{" "}
                                     KPI asosida oylik tizimi
                                 </li>
-                                <li className="flex items-center text-nowrap gap-[5px]">
+                                <li className="flex items-start  gap-[5px]">
                                     {" "}
                                     <span className="inline-block w-1 h-1 bg-[#334155] rounded-[50%]"></span>{" "}
                                     Ishga olish voronkasi (bosqichma-bosqich
                                     jarayon)
                                 </li>
-                                <li className="flex items-center text-nowrap gap-[5px]">
+                                <li className="flex items-start  gap-[5px]">
                                     {" "}
                                     <span className="inline-block w-1 h-1 bg-[#334155] rounded-[50%]"></span>{" "}
                                     Yangi xodimlar uchun o‘quv dasturi
@@ -132,12 +132,12 @@ function Services() {
                                 Marketing bo’limi
                             </h3>
                             <ul className="mt-2 font-normal md:text-base text-sm leading-7 text-[#334155] r">
-                                <li className="flex items-center text-nowrap gap-[5px]">
+                                <li className="flex items-start  gap-[5px]">
                                     {" "}
                                     <span className="inline-block w-1 h-1 bg-[#334155] rounded-[50%]"></span>
                                     Notion asosida kontent boshqaruvi
                                 </li>
-                                <li className="flex items-center text-nowrap gap-[5px]">
+                                <li className="flex items-start  gap-[5px]">
                                     {" "}
                                     <span className="inline-block w-1 h-1 bg-[#334155] rounded-[50%]"></span>{" "}
                                     Kontent plan bilan ishlash va nazorat tizimi
@@ -156,29 +156,29 @@ function Services() {
                                 Yuridik yordam
                             </h3>
                             <ul className="mt-2 font-normal md:text-base text-sm leading-7 text-[#334155] r">
-                                <li className="flex gap-[5px] items-center text-nowrap">
+                                <li className="flex gap-[5px] items-center ">
                                     {" "}
                                     <span className="inline-block w-1 h-1 bg-[#334155] rounded-[50%]"></span>
                                     Kompaniyani ochish va huquqiy ro‘yxatdan
                                     o‘tkazish
                                 </li>
-                                <li className="flex items-center text-nowrap  gap-[5px]">
+                                <li className="flex items-start   gap-[5px]">
                                     {" "}
                                     <span className="inline-block w-1 h-1 bg-[#334155] rounded-[50%]"></span>{" "}
                                     Xodimlarni rasmiy ishga olish hujjatlari
                                 </li>
-                                <li className="flex items-center text-nowrap gap-[5px]">
+                                <li className="flex items-start  gap-[5px]">
                                     {" "}
                                     <span className="inline-block w-1 h-1 bg-[#334155] rounded-[50%]"></span>{" "}
                                     Tijorat sirlarini himoya qilish bo‘yicha
                                     kelishuvlar
                                 </li>
-                                <li className="flex items-center text-nowrap gap-[5px]">
+                                <li className="flex items-start  gap-[5px]">
                                     {" "}
                                     <span className="inline-block w-1 h-1 bg-[#334155] rounded-[50%]"></span>{" "}
                                     Hamkorlik va xizmat ko‘rsatish shartnomalari
                                 </li>
-                                <li className="flex items-center text-nowrap gap-[5px]">
+                                <li className="flex items-start  gap-[5px]">
                                     {" "}
                                     <span className="inline-block w-1 h-1 bg-[#334155] rounded-[50%]"></span>{" "}
                                     Soliq yukini optimallashtirish
