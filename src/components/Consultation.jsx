@@ -1,12 +1,13 @@
-import React from "react";
-import { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import call from "../assets/call.svg";
+import vctor from "../assets/vector.svg";
 
 function Consultation() {
     const scriptURL =
         "https://script.google.com/macros/s/AKfycbxYpZMpHBD889oAVNVTvmuSaLQ1bp9VxohATn9pYJtKogQc2jztxFw7xvTejXlW3xX4bA/exec";
 
     const formRef = useRef(null);
+    const [modalOpen, setModalOpen] = useState(false);
 
     useEffect(() => {
         const form = formRef.current;
@@ -16,7 +17,8 @@ function Consultation() {
             fetch(scriptURL, { method: "POST", body: new FormData(form) })
                 .then((response) => {
                     console.log("Success!", response);
-                    alert("Yuborildi! Tez orada bog'lanamiz.");
+                    // alert o'rniga modalni ochamiz
+                    setModalOpen(true);
                     form.reset();
                 })
                 .catch((error) => {
@@ -30,6 +32,14 @@ function Consultation() {
         // Cleanup
         return () => form.removeEventListener("submit", handleSubmit);
     }, []);
+
+    // Modalni yopish funksiyasi
+    const closeModal = () => setModalOpen(false);
+
+    // Home page ga qaytish (misol uchun root / ga yo'naltirish)
+    const goToHome = () => {
+        window.location.href = "/";
+    };
 
     return (
         <section className="md:pt-20 md:pb-20 pt-[60px] pb-[100px]">
@@ -93,6 +103,46 @@ function Consultation() {
                     </button>
                 </form>
             </div>
+
+            {/* Modal */}
+            {modalOpen && (
+                <div
+                    className="fixed inset-0 bg-[rgba(0,0,0,0.6)] flex items-center justify-center z-50"
+                    onClick={closeModal}
+                >
+                    <div
+                        className="bg-white rounded-lg p-6 md:max-w-[430px] max-w-[327px] w-full mx-4 relative border border-[#E4E9EE]"
+                        onClick={(e) => e.stopPropagation()} // Modal ichida clickni oldini olish
+                    >
+                        <button
+                            className="absolute top-2 right-3 text-gray-500 text-xl font-bold"
+                            onClick={closeModal}
+                            aria-label="close modal"
+                        >
+                            ×
+                        </button>
+                        <div className="w-[70px] h-[70px] bg-[#d9e7dc] mb-[31px] rounded-[50%] mx-auto flex items-center justify-center">
+                            <img
+                                src={vctor}
+                                alt="Success"
+                                className=""
+                                width={35}
+                                height={25}
+                            />
+                        </div>
+                        <h3 className="text-center text-lg font-semibold mt-6 mb-3 leading-[140%] tracking-[-0.2px]">
+                        Konsultatsiyaga muvaffaqiyatli yozildingiz!
+                        </h3>
+                        <p className=" text-center mb-8 text-[#818B9C] font-normal text-xs leading-[160%]">Operatorlar 24 soat ichida siz bilan bog’lanishadi.</p>
+                        <button
+                            onClick={goToHome}
+                            className="bg-[#0F172A] text-white py-2 px-4 rounded w-full cursor-pointer  hover:text-amber-600"
+                        >
+                            Bosh sahifaga qaytish
+                        </button>
+                    </div>
+                </div>
+            )}
         </section>
     );
 }
